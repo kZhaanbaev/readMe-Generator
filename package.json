@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "This program will generate a ReadMe.md file based on answers provided by the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kZhaanbaev/readMe-Generator.git"
+  },
+  "author": "Kubanychbek Zhaanbaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kZhaanbaev/readMe-Generator/issues"
+  },
+  "homepage": "https://github.com/kZhaanbaev/readMe-Generator#readme"
+}
