@@ -47,5 +47,5 @@
   ## [Questions](#Questions)
 
   If any questions dont hesitate to reach out. <br />
-  Github username: kZhaanbaev <br />
+  Github username: [kZhaanbaev](https://github.com/kZhaanbaev) <br />
   email: k.zhaanbaev4@gmail.com
