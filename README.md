@@ -1,6 +1,5 @@
 # Weather App
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  <br />
+
   ## Table of Contents:
   <hr />
 
@@ -13,22 +12,27 @@
   * [Questions](#Questions)
 
   <br /><br />
-  ![image of application](./utils/image/mainScreenshot.png)
+  ![image of application](./utils/image/recording.gif)
   <br /><br />
   ## [Description](#description)
   <hr />
 
-  This application will generate a weather forecast, including 5 day.
+  This application will prompt number of questions to user in colsole and based on the answers will generate a README.md file. Optional add screenshot feature is included as well in case user wants to add a screenshot of his/her application or test scenarios.
   <br /><br />
   ## [Installation instructions](#InstallationInstructions)
   <hr />
 
-  All tools come included as a dependency
+  To install the packages run "-npm i" command <br />
+  
   <br /><br />
   ## [Usage](#Usage)
   <hr />
 
-  Input zip code or city name, click on Search button and it will generate a weather forecast
+ To start the application run "-node index.js". <br />
+ Most of the questions require answers in text format. <br />
+ Screenshot related questions need Yes (Y) or No (N) answers.
+ There are only 2 screenshots included at the moment. <br />
+ If user wants to add their screenshot, paste it to utils package and rename it as "mainScreenshot.png" or "testScreenshot/png" based on what type of screenshot it is.
   <br /><br />
   ## [Contributors](#Contributors)
   <hr />
@@ -38,7 +42,7 @@
   ## [Tests](#Tests)
   <hr />
 
-  Adding a screenshot of sample test
+  Adding a screenshot of sample test. <br>
   <br />
   ![image of application](./utils/image/testScreenshot.png)
   <br /><br />
@@ -46,7 +50,6 @@
   <hr />
 
   Copyright (c) Kuba Z Production. All rights reserved.
-	Licensed under the The MIT License.
   <br /><br />
   ## [Questions](#Questions)
   <hr />
