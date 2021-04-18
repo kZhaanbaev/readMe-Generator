@@ -30,51 +30,51 @@ const generateFileContent = function (answers, licenseBadge, addMainScreenshot, 
   ## Table of Contents:
   <hr />
 
-  * Description
-  * Installation instructions
-  * Usage
-  * Contributors
-  * Tests
-  * License
-  * Questions
+  * [Description](#description)
+  * [Installation instructions](#InstallationInstructions)
+  * [Usage](#Usage)
+  * [Contributors](#Contributors)
+  * [Tests](#Tests)
+  * [License](#License)
+  * [Questions](#Questions)
 
   <br /><br />
   ${addMainScreenshot}
   <br /><br />
-  ## Description
+  ## [Description](#description)
   <hr />
 
   ${answers.description}
   <br /><br />
-  ## Installation instructions
+  ## [Installation instructions](#InstallationInstructions)
   <hr />
 
   ${answers.installation}
   <br /><br />
-  ## Usage
+  ## [Usage](#Usage)
   <hr />
 
   ${answers.usage}
   <br /><br />
-  ## Contributors
+  ## [Contributors](#Contributors)
   <hr />
 
   ${answers.contributors}
   <br /><br />
-  ## Tests
+  ## [Tests](#Tests)
   <hr />
 
   ${answers.tests}
   <br />
   ${addTestScreenshot}
   <br /><br />
-  ## License
+  ## [License](#License)
   <hr />
 
   Copyright (c) Kuba Z Production. All rights reserved.
 	Licensed under the ${answers.license}.
   <br /><br />
-  ## Questions
+  ## [Questions](#Questions)
   <hr />
 
   If any questions dont hesitate to reach out. <br />
