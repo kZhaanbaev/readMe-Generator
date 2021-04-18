@@ -78,7 +78,7 @@ const generateFileContent = function (answers, licenseBadge, addMainScreenshot, 
   <hr />
 
   If any questions dont hesitate to reach out. <br />
-  Github username: ${answers.gitHubUsername} <br />
+  Github username: [${answers.gitHubUsername}](https://github.com/${answers.gitHubUsername}) <br />
   email: ${answers.email}
 `};
 
