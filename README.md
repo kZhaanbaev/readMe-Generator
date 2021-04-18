@@ -1,4 +1,4 @@
-# Weather App
+# README.md Generator
 
   ## Table of Contents:
   <hr />
