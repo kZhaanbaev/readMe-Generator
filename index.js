@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
     'What is the project title?',
     'Add a main screenshot of the project? (Screenshot is located in /utils/images/screenshot.png, save your image with same name in the same location)',
@@ -11,24 +11,20 @@ const questions = [
     'How to use the application?',
     'Information about contributors?',
     'Any Tests included and how to run them?',
+    'Add test screenshot?',
     'Choose one of the following licenses:',
     'Github username?',
     "email address?"
 ];
 
-const fileContent = (answers, licenseBadge) =>
-`# ${answers.title}
-    ${licenseBadge}
-    <br /><br />
-    ![image of application](./utils/image/screenshot.png)    
-`
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.write(fileName, data, (err) =>
+// Function writes to a file
+function writeToFile(fileName, answers) {
+    const fileContent = generateMarkdown(answers);
+    fs.writeFile(fileName, fileContent, (err) =>
     err ? console.error(err) : console.log('Successfully added to File'));
 }
 
+//Function promts all questions to user from questions array
 function promptQuestions(){
     inquirer
         .prompt([
@@ -39,7 +35,7 @@ function promptQuestions(){
             },
             {
                 type: 'confirm',
-                name: 'addScreenshot',
+                name: 'addMainScreenshot',
                 message: questions[1]
             },
             {
@@ -68,32 +64,35 @@ function promptQuestions(){
                 message: questions[6]
             },
             {
+                type: 'confirm',
+                name: 'addTestScreenshot',
+                message: questions[7]
+            },
+            {
                 type: 'list',
                 name: 'license',
-                message: questions[7],
+                message: questions[8],
                 choices: ['Apache 2.0 License', 'The MIT License', 'Open Database License (ODbL)', 'WTFPL']
             },
             {
                 type: 'input',
-                name: 'gitHub',
-                message: questions[8]
+                name: 'gitHubUsername',
+                message: questions[9]
             },
             {
                 type: 'input',
                 name: 'email',
-                message: questions[9]
+                message: questions[10]
             },
         ])
         .then(answers => {
-            
+            writeToFile('README.md', answers);
         })
 }
 
-// TODO: Create a function to initialize app
+// Function initializes app
 function init() {
     promptQuestions();
 }
 
-
-// Function call to initialize app
 init();
