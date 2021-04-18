@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kZhaanbaev/readMe-Generator/issues"
   },
-  "homepage": "https://github.com/kZhaanbaev/readMe-Generator#readme"
+  "homepage": "https://github.com/kZhaanbaev/readMe-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
